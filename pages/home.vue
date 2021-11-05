@@ -1,5 +1,5 @@
 <template>
-	<Navbar />
+	<NavbarLogged />
 	<div class="p-8 text-justify">
 		<h1>WOOOOO</h1>
 		<p>
