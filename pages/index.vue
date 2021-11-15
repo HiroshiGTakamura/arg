@@ -4,7 +4,7 @@ const log = ref("");
 const pass = ref("");
 const err = ref(false);
 const verify = function () {
-	if (log.value.toLowerCase() == "jonathan.m.rodrigues@gmail.com" && pass.value == "emergencia07") {
+	if (log.value.toLowerCase() == "jonathan.m.rodrigues07@gmail.com" && pass.value == "emergencia07") {
 		// router.push("/game");
 		window.location.pathname = "/game";
 		err = false;

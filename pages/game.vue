@@ -1,7 +1,7 @@
 <script setup>
 /*enigmas completos:
 1 PVC    (3)   <-
-2 PP     (5)   <-  
+2 PP     (5)   <-
 3 PS     (6)   
 4 Outros (7)   
 5 PEAD   (2)   <-
