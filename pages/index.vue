@@ -4,7 +4,7 @@ const log = ref("");
 const pass = ref("");
 const err = ref(false);
 const verify = function () {
-	if (log.value.toLowerCase() == "ginasantos@gmail.com" && pass.value == "va260295") {
+	if (log.value.toLowerCase() == "jonathan.m.rodrigues@gmail.com" && pass.value == "emergencia07") {
 		// router.push("/game");
 		window.location.pathname = "/game";
 		err = false;
@@ -15,7 +15,7 @@ const verify = function () {
 </script>
 <template>
 	<Navbar />
-	<div class="flex login h-52 flex-col gap-4 m-auto translate-y-1/2">
+	<div class="flex flex-col gap-4 m-auto translate-y-1/2 login h-52">
 		<div class="flex-shrink">
 			<h1>Login</h1>
 			<input class="border-2 border-gray-700 rounded-sm" v-model="log" placeholder="me@email.com" />
@@ -25,7 +25,7 @@ const verify = function () {
 			<input class="border-2 border-gray-700 rounded-sm" v-model="pass" placeholder="*********" />
 		</div>
 
-		<div class="flex flex-shrink justify-between mt-2">
+		<div class="flex justify-between flex-shrink mt-2">
 			<button @click="verify()" class="text-white bg-blue-500 button hover:bg-blue-600">Entrar</button>
 		</div>
 		<div v-if="err.valueOf()">

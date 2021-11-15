@@ -1,4 +1,13 @@
 <script setup>
+/*enigmas completos:
+1 PVC    (3)   <-
+2 PP     (5)   <-  
+3 PS     (6)   
+4 Outros (7)   
+5 PEAD   (2)   <-
+6 PET    (1)   <-
+7 PEBD   (4)   <-
+*/
 const router = useRouter();
 const name1 = ref("");
 const name2 = ref("");
@@ -10,7 +19,15 @@ const name7 = ref("");
 
 const verify = function () {
 	const nameFields = [name1, name2, name3, name4, name5, name6, name7];
-	const names = ["pvc", "pp", "ps", "outros", "pead", "pet", "pebd"];
+	const names = [
+		"policloreto de vinila",
+		"polipropileno",
+		"poliestireno",
+		"outros",
+		"polietileno de alta densidade",
+		"polietileno tereftalato",
+		"polietileno de baixa densidade",
+	];
 	for (let i = 0; i < nameFields.length; i++) {
 		if (nameFields[i].value.toLowerCase() != names[i]) {
 			console.log("incorreto");
@@ -20,18 +37,22 @@ const verify = function () {
 	router.push("/carta");
 	/*console.log("correto");*/
 };
+
+function popup() {
+	alert("https://imgur.com/a/--- -. -.-- --.. ...- ..-. --- \n AaaaAAA");
+}
 </script>
 <template>
 	<title>...</title>
 	<div class="flex flex-col w-full h-full bg-black align-center">
 		<div class="flex flex-col items-center justify-center gap-8 p-8 md:flex-row">
-			<a href="" target="_blank">
+			<a href="https://imgur.com/a/KPkf4TJ" target="_blank">
 				<img class="w-32 bg-white" src="~/assets/tile000.png" />
 			</a>
 			<input class="font-bold h-7 w-60" type="text" v-model="name1" />
 		</div>
 		<div class="flex flex-col items-center justify-center gap-8 p-8 md:flex-row">
-			<a href="" target="_blank">
+			<a href="https://imgur.com/a/NmgguZa" target="_blank">
 				<img class="w-32 bg-white" src="~/assets/tile001.png" />
 			</a>
 			<input class="font-bold h-7 w-60" type="text" v-model="name2" />
@@ -49,9 +70,9 @@ const verify = function () {
 			<input class="font-bold h-7 w-60" type="text" v-model="name4" />
 		</div>
 		<div class="flex flex-col items-center justify-center gap-8 p-8 md:flex-row">
-			<a href="" target="_blank">
+			<button @click="popup()">
 				<img class="w-32 bg-white" src="~/assets/tile004.png" />
-			</a>
+			</button>
 			<input class="font-bold h-7 w-60" type="text" v-model="name5" />
 		</div>
 		<div class="flex flex-col items-center justify-center gap-8 p-8 md:flex-row">
@@ -61,7 +82,7 @@ const verify = function () {
 			<input class="font-bold h-7 w-60" type="text" v-model="name6" />
 		</div>
 		<div class="flex flex-col items-center justify-center gap-8 p-8 md:flex-row">
-			<a href="" target="_blank">
+			<a href="https://imgur.com/a/imBxm1m" target="_blank">
 				<img class="w-32 bg-white" src="~/assets/tile006.png" />
 			</a>
 			<input class="font-bold h-7 w-60" type="text" v-model="name7" />
