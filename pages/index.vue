@@ -18,11 +18,11 @@ const verify = function () {
 	<div class="flex flex-col gap-4 m-auto translate-y-1/2 login h-52">
 		<div class="flex-shrink">
 			<h1>Login</h1>
-			<input class="border-2 border-gray-700 rounded-sm" v-model="log" placeholder="me@email.com" />
+			<input class="w-full border-2 border-gray-700 rounded-sm" v-model="log" placeholder="me@email.com" />
 		</div>
 		<div class="flex-shrink">
 			<h1>Senha</h1>
-			<input class="border-2 border-gray-700 rounded-sm" v-model="pass" placeholder="*********" />
+			<input class="w-full border-2 border-gray-700 rounded-sm" v-model="pass" placeholder="*********" />
 		</div>
 
 		<div class="flex justify-between flex-shrink mt-2">
