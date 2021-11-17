@@ -1,4 +1,6 @@
 <template>
+	<title>...</title>
+
 	<div class="flex flex-col w-full h-full bg-black align-center">
 		<Coisa />
 		<Coisa />

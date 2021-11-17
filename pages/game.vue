@@ -2,7 +2,7 @@
 /*enigmas completos:
 1 PVC    (3)   <-
 2 PP     (5)   <-
-3 PS     (6)
+3 PS     (6)   <-
 4 Outros (7)
 5 PEAD   (2)   <-
 6 PET    (1)   <-
@@ -66,9 +66,9 @@ const viewing = ref(false);
 			<input class="font-bold h-7 w-60" type="text" v-model="name3" />
 		</div>
 		<div class="flex flex-col items-center justify-center gap-8 p-8 md:flex-row">
-			<a href="" target="_blank">
+			<NuxtLink to="/7" target="_blank">
 				<img class="w-32 bg-white" src="~/assets/tile003.png" />
-			</a>
+			</NuxtLink>
 			<input class="font-bold h-7 w-60" type="text" v-model="name4" />
 		</div>
 		<div class="flex flex-col items-center justify-center gap-8 p-8 md:flex-row">
@@ -93,8 +93,14 @@ const viewing = ref(false);
 		<button @click="verify()" class="self-center p-3 m-8 text-black bg-white button hover:bg-gray-300 w-36">Enviar</button>
 
 		<div class="items-start p-2">
-			<button v-if="viewing == false" @click="viewing = !viewing" class="px-20 py-2 text-black bg-black">a</button>
-			<p class="text-white" v-if="viewing">oneritseilop</p>
+			<button
+				v-if="viewing == false"
+				@click="viewing = !viewing"
+				class="p-2 text-black bg-black border border-gray-900 rounded-md"
+			>
+				aaaaaaaaaaaa
+			</button>
+			<p class="p-2 text-white" v-if="viewing">oneritseilop</p>
 		</div>
 	</div>
 </template>
